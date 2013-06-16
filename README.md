@@ -7,7 +7,11 @@ Tomeklink.py allows you to remove the Tomeklinks from your data. Definition of a
 
 Example of the code (which you get after running TomekLinkTest.py):
 
+Before:
+
 ![Alt text](/before.JPG "Before")
+
+After:
 
 ![Alt text](/after.JPG "After")
 
