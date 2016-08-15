@@ -24,7 +24,7 @@ def detectTomekLinks(X,y):
     # k2 stores the first nearest neighbour
     k2 = neigh.kneighbors(X)[1]
 
-    # k_tomek stores the
+    # k_tomek stores the ones where the labels conflict.
     k_tomek = k2[y != y[k2[:,1]]]
 
     # This is for getting the positions
@@ -44,6 +44,7 @@ def removeTomekLinks(X,y,tomeklinks):
     return X[tomeklinks], y[tomeklinks]
 
 
+# a quick  test
 if __name__ == "__main__":
 
     X,y = createCluster()
